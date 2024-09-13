@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Wiyao Edjeou</title>
+    <link rel="stylesheet" href="contact_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Wiyao Edjeou</h1>
+        </header>
+
+        <section class="contact-info">
+            <p><strong>Wiyao Edjeou</strong></p>
+            <p>Porsögården 32, 977 54 Luleå, Sweden</p>
+            <p><strong>Phone:</strong> +33 6 18 79 43 41</p>
+            <p><strong>Email:</strong> <a href="mailto:wiyaoedjeou@outlook.com">wiyaoedjeou@outlook.com</a></p>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="hidden" name="lang" value="en"> <!-- Hidden field for language -->
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="^\+?[0-9\s]+$" placeholder="e.g., +33 6 12 34 56 78" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Wiyao Edjeou. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
