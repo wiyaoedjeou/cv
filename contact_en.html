@@ -4,49 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Wiyao Edjeou</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="contact_style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Contact Wiyao Edjeou</h1>
-        </header>
+    <header>
+        <div class="lang-switcher">
+            <a href="contact_en.html">English</a> | <a href="contact.html">Français</a>
+        </div>
+        <h1>Contact Wiyao Edjeou</h1>
+        <p>Mechanical Research Engineer | Numerical Simulations | Contact Mechanics & Material Science</p>
+    </header>
 
-        <section class="contact-info">
-            <p><strong>Wiyao Edjeou</strong></p>
-            <p>Porsögården 32, 977 54 Luleå, Sweden</p>
-            <p><strong>Phone:</strong> +33 6 18 79 43 41</p>
-            <p><strong>Email:</strong> <a href="mailto:wiyaoedjeou@outlook.com">wiyaoedjeou@outlook.com</a></p>
-        </section>
+    <section class="contact-form-container">
+        <h2>Contact Form</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <!-- Contact Form -->
-        <section class="contact-form">
-            <h2>Contact Form</h2>
-            <form action="submit_form.php" method="POST">
-                <input type="hidden" name="lang" value="en"> <!-- Hidden field for language -->
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Ex: +33 6 12 34 56 78">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label for="phone">Phone number:</label>
-                <input type="tel" id="phone" name="phone" pattern="^\+?[0-9\s]+$" placeholder="e.g., +33 6 12 34 56 78" required>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Wiyao Edjeou. All rights reserved.</p>
-        </footer>
-    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>
+                    Porsögården 32, 977 54 Luleå, Sweden<br>
+                    Phone: +33 6 18 79 43 41<br>
+                    Email: <a href="mailto:wiyaoedjeou@outlook.com">wiyaoedjeou@outlook.com</a>
+                </p>
+            </div>
+            <div class="footer-right">
+                <p><a href="index_en.html">Back to homepage</a></p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Wiyao Edjeou. All rights reserved.</p>
+    </footer>
 </body>
 </html>
